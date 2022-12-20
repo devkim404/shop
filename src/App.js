@@ -1,10 +1,19 @@
+import Header from './components/common/Header';
+import Home from './components/home/Home';
+import { Routes, Route, Link } from 'react-router-dom';
 
-import Home from './components/Home';
-
-function App() {
+export default function App() {
   return (
-    <Home />
+    <Routes>
+      <Route path="/" element={
+        <Home />
+      } />
+      <Route path="/detail" element={
+        <Header />
+      } />
+      <Route path="/about" element={
+        <Header />
+      } />
+    </Routes>
   );
 }
-
-export default App;
