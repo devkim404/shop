@@ -1,13 +1,13 @@
-import Header from '../common/Header';
+import Header from '../header/Header';
 import HomeBanner from './HomeBanner';
-import HomeProductList from './HomeProductList';
+import ProductList from '../products/ProductList';
 
 export default function Home() {
   return (
     <>
       <Header />
       <HomeBanner />
-      <HomeProductList />
+      <ProductList />
     </>
   );
 }

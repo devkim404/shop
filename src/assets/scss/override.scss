@@ -4,13 +4,25 @@
   background-position : center;
 }
 .row {
-  &.mainProductList {
+  &.productList {
     margin-top: 1rem;
     .col {
       img {
         width:100%;
       }
       &-sm-4 {
+        img {
+          width:100%;
+        }
+      }
+    }
+  }
+  &.productDetail {
+    .col {
+      img {
+        width:100%;
+      }
+      &-md-6 {
         img {
           width:100%;
         }
