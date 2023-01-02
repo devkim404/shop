@@ -3,7 +3,7 @@ import { Container, Row, Col, Alert, Button, Nav } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import TabContent from '../common/tab/TabContent';
 // dummy data
-import { data } from '../../data/dummydata';
+import { data } from '../../data/Dummydata';
 
 export default function ProductDetail() {
 

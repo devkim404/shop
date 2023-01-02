@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import Product from '../products/Product';
 import axios from 'axios';
 // dummy data
-import { data } from '../../data/dummydata';
+import { data } from '../../data/Dummydata';
 
 export default function ProductList() {
 

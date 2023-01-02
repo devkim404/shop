@@ -2,6 +2,7 @@ import Home from './components/home/Home';
 import Header from './components/header/Header';
 import ProductList from './components/products/ProductList';
 import ProductDetail from './components/products/ProductDetail';
+import Cart from './components/cart/Cart';
 import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
@@ -20,6 +21,12 @@ export default function App() {
         <>
           <Header />
           <ProductDetail />
+        </>
+      } />
+      <Route path="/cart" element={
+        <>
+          <Header />
+          <Cart />
         </>
       } />
       <Route path="*" element={

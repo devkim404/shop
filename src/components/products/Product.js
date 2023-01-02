@@ -1,6 +1,6 @@
 import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { ROUTE_PATH } from '../../route/route';
+import { ROUTE_PATH } from '../../route/Route';
 
 export default function Product({
   product

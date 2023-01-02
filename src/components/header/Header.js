@@ -9,6 +9,7 @@ export default function Header() {
         <Navbar.Brand href="/">ShoeShop</Navbar.Brand>
         <Nav className="me-auto">
           <Link to="/shop" className="nav-link">Shop</Link>
+          <Link to="/cart" className="nav-link">Cart</Link>
         </Nav>
       </Container>
     </Navbar>
