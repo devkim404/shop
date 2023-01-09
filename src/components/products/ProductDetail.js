@@ -2,11 +2,14 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Alert, Button, Nav } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import TabContent from '../common/tab/TabContent';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../../hooks/store';
 // dummy data
 import { data } from '../../data/Dummydata';
 
 export default function ProductDetail() {
 
+  const dispatch = useDispatch();
   const [count, setCount] = useState(10);
   const [tabIndex, setTabIndex] = useState(0);
 
@@ -35,6 +38,9 @@ export default function ProductDetail() {
           <h4 className="pt-5">{product.title}</h4>
           <p>{product.content}</p>
           <p>{product.price}원</p>
+          <Button variant="secondary" className="me-2" onClick={() => {
+            dispatch(addItem({id: 1, name: 'Red Knit', count: 1}));
+          }}>장바구니</Button>
           <Button variant="danger">주문하기</Button>
         </Col>
       </Row>

@@ -7,9 +7,6 @@ const user = createSlice({
     age : 20,
   },
   reducers: {
-    // changeName(state) {
-    //   state.name = 'park';
-    // },
     increase(state) {
       state.age += 1;
     },
@@ -26,6 +23,9 @@ const cart = createSlice({
     addCount(state, action) {
       const idx = state.findIndex((e) => e.id === action.payload);
       state[idx].count++;
+    },
+    addItem(state, action) {
+      state.push(action.payload);
     }
   }
 })
@@ -38,4 +38,4 @@ export default configureStore({
 })
 
 export const { increase } = user.actions;
-export const { addCount } = cart.actions;
+export const { addCount, addItem } = cart.actions;
